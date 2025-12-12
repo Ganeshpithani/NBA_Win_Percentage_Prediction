@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 import pandas as pd
-
+import sklearn
 with open("knn_model_pickle.pkl", "rb") as f:
     model = pickle.load(f)
 st.title("NBA Win Percentage Prediction App")
@@ -125,3 +125,4 @@ button[data-testid="stButton"] {
 """,
 unsafe_allow_html=True
 )
+
